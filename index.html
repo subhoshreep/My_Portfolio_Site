@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+<body class="bsun bmoon">
+      <nav class="navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="logo_portfolio.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+          </a>
+          <ul class="namey">
+            <li class="nameyitem">
+              <a class="namit"><b>Portfolio</b></a>
+            </li>
+          </ul>
+          <ul class="navobar move-right">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills"> Skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects"> Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"> Contact</a>
+            </li>
+          </ul>
+          <input type="checkbox" id="darkmode-toggle" onclick="toggleBackgroundColor()"/>
+		<label for="darkmode-toggle">
+			<svg version="1.1" class="sun" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve">
+
+			<rect x="152.994" y="58.921" transform="matrix(0.3827 0.9239 -0.9239 0.3827 168.6176 -118.5145)" width="40.001" height="16"/>
+			<rect x="46.9" y="164.979" transform="matrix(0.9239 0.3827 -0.3827 0.9239 71.29 -12.4346)" width="40.001" height="16"/>
+			<rect x="46.947" y="315.048" transform="matrix(0.9239 -0.3827 0.3827 0.9239 -118.531 50.2116)" width="40.001" height="16"/>
+			
+				<rect x="164.966" y="409.112" transform="matrix(-0.9238 -0.3828 0.3828 -0.9238 168.4872 891.7491)" width="16" height="39.999"/>
+			
+				<rect x="303.031" y="421.036" transform="matrix(-0.3827 -0.9239 0.9239 -0.3827 50.2758 891.6655)" width="40.001" height="16"/>
+			
+				<rect x="409.088" y="315.018" transform="matrix(-0.9239 -0.3827 0.3827 -0.9239 701.898 785.6559)" width="40.001" height="16"/>
+			
+				<rect x="409.054" y="165.011" transform="matrix(-0.9239 0.3827 -0.3827 -0.9239 891.6585 168.6574)" width="40.001" height="16"/>
+			<rect x="315.001" y="46.895" transform="matrix(0.9238 0.3828 -0.3828 0.9238 50.212 -118.5529)" width="16" height="39.999"/>
+			<path d="M248,88c-88.224,0-160,71.776-160,160s71.776,160,160,160s160-71.776,160-160S336.224,88,248,88z M248,392
+				c-79.4,0-144-64.6-144-144s64.6-144,144-144s144,64.6,144,144S327.4,392,248,392z"/>
+			<rect x="240" width="16" height="72"/>
+			<rect x="62.097" y="90.096" transform="matrix(0.7071 0.7071 -0.7071 0.7071 98.0963 -40.6334)" width="71.999" height="16"/>
+			<rect y="240" width="72" height="16"/>
+			
+				<rect x="90.091" y="361.915" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -113.9157 748.643)" width="16" height="71.999"/>
+			<rect x="240" y="424" width="16" height="72"/>
+			
+				<rect x="361.881" y="389.915" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 397.8562 960.6281)" width="71.999" height="16"/>
+			<rect x="424" y="240" width="72" height="16"/>
+			<rect x="389.911" y="62.091" transform="matrix(0.7071 0.7071 -0.7071 0.7071 185.9067 -252.6357)" width="16" height="71.999"/>
+</svg>
+     <svg version="1.1" class="moon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 49.739 49.739" style="enable-background:new 0 0 49.739 49.739;" xml:space="preserve">
+     <path d="M25.068,48.889c-9.173,0-18.017-5.06-22.396-13.804C-3.373,23.008,1.164,8.467,13.003,1.979l2.061-1.129l-0.615,2.268
+       c-1.479,5.459-0.899,11.25,1.633,16.306c2.75,5.493,7.476,9.587,13.305,11.526c5.831,1.939,12.065,1.492,17.559-1.258v0
+       c0.25-0.125,0.492-0.258,0.734-0.391l2.061-1.13l-0.585,2.252c-1.863,6.873-6.577,12.639-12.933,15.822
+       C32.639,48.039,28.825,48.888,25.068,48.889z M12.002,4.936c-9.413,6.428-12.756,18.837-7.54,29.253
+       c5.678,11.34,19.522,15.945,30.864,10.268c5.154-2.582,9.136-7.012,11.181-12.357c-5.632,2.427-11.882,2.702-17.752,0.748
+       c-6.337-2.108-11.473-6.557-14.463-12.528C11.899,15.541,11.11,10.16,12.002,4.936z"/></svg>
+		</label>
+     </nav>
+     <!-- <div class="background"></div> -->
+    </div>
+
+    <!--home section---------->
+    <section id="home" class="home">
+      <div class="home-content" id="text-animation-container">
+        <h1>Hi! I'm Subhoshree Pattnaik</h1>
+        <div class="change-text">
+          <h3>And I'm</h3>
+          <h3>
+            <span class="word">an&nbsp;Electronics&nbsp;Engineer</span>
+            <span class="word">Web&nbsp;Designer</span>
+            <span class="word">Frontend&nbsp;Developer</span>
+            <span class="word">Graphics&nbsp;Designer</span>
+          </h3>
+        </div>
+        <p>Explore my portfolio, where I seamlessly integrate engineering expertise with 
+          cutting-edge technology to create remarkable digital innovations.
+        </p>
+
+        <!--email information-->
+        
+        <div class="info-box">
+          <div class="email-info">
+            <h5>Email :</h5>
+            <span>Mouranisubho@gmail.com</span>
+          </div>
+        </div>
+        
+        <!--buttons for hire and cv download-->
+
+        <div class="btn-box">
+          <a href="https://drive.google.com/file/d/1Ifc4gtLb_8iQyXdvcm9_BzfOxtcF095y/view?usp=sharing" class="btn">Download</a>
+          <a href="#contact" class="btn">Hire Me Now!</a>
+        </div>
+
+        <!--social media handles-->
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/subhoshree.pattnaik/" class="social-icon facebook">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="https://github.com/subhoshreep" class="social-icon github">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/subhoshree-pattnaik-7b98471b5/" class="social-icon linkedin">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/subhoshree_11/" class="social-icon instagram">
+            <i class="bx bxl-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="home-image">
+        <div class="img-box">
+          <img src="profile.png" alt="homeimg">
+        </div>
+        <div class="liquid-shape">
+          <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+            <path fill="#d8860b">
+              <animate attributeName="d"
+                dur="20000ms"
+                repeatCount="indefinite"
+                values="M452.5,300Q406,350,364.5,380.5Q323,411,274,417Q225,423,170,414Q115,405,82.5,357Q50,309,71,256.5Q92,204,112,159Q132,114,175,71Q218,28,277,45Q336,62,363.5,111Q391,160,445,205Q499,250,452.5,300Z;
+                M410,302.5Q413,355,371,389.5Q329,424,277,425.5Q225,427,165,422Q105,417,64,367Q23,317,18,248.5Q13,180,60.5,133Q108,86,163.5,58.5Q219,31,285.5,29Q352,27,402.5,73Q453,119,430,184.5Q407,250,410,302.5Z;
+                M459,305Q422,360,383.5,409Q345,458,286,434.5Q227,411,163,417.5Q99,424,59.5,371Q20,318,61,262.5Q102,207,122,166.5Q142,126,181.5,87.5Q221,49,267,80.5Q313,112,366,127Q419,142,457.5,196Q496,250,459,305Z;
+                M442.5,311Q440,372,382.5,393.5Q325,415,277,407Q229,399,164.5,411Q100,423,56,371.5Q12,320,28,254.5Q44,189,94.5,159Q145,129,180,66.5Q215,4,274,36.5Q333,69,379.5,103Q426,137,435.5,193.5Q445,250,442.5,311Z;
+                M432,295.5Q391,341,364,390.5Q337,440,282,425Q227,410,178.5,399Q130,388,78.5,351.5Q27,315,24,249Q21,183,67.5,138.5Q114,94,164.5,51Q215,8,269.5,48.5Q324,89,374.5,113.5Q425,138,449,194Q473,250,432,295.5Z;
+                M433,301Q409,352,371,391.5Q333,431,276.5,444Q220,457,163,436.5Q106,416,60,367.5Q14,319,29,254Q44,189,82.5,145Q121,101,172,82.5Q223,64,272.5,78.5Q322,93,371,117Q420,141,438.5,195.5Q457,250,433,301Z;
+                M394.5,290.5Q377,331,356,384Q335,437,281,423.5Q227,410,181,396.5Q135,383,104,342.5Q73,302,57,245.5Q41,189,74,137Q107,85,166,79Q225,73,289,49Q353,25,392,79.5Q431,134,421.5,192Q412,250,394.5,290.5Z;
+                "
+              ></animate>
+            </path>
+          </svg>
+        </div>
+        <div class="liquid-shape">
+          <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+            <path fill="#d8860b">
+              <animate attributeName="d"
+                dur="20000ms"
+                repeatCount="indefinite"
+                values="M452.5,300Q406,350,364.5,380.5Q323,411,274,417Q225,423,170,414Q115,405,82.5,357Q50,309,71,256.5Q92,204,112,159Q132,114,175,71Q218,28,277,45Q336,62,363.5,111Q391,160,445,205Q499,250,452.5,300Z;
+                M410,302.5Q413,355,371,389.5Q329,424,277,425.5Q225,427,165,422Q105,417,64,367Q23,317,18,248.5Q13,180,60.5,133Q108,86,163.5,58.5Q219,31,285.5,29Q352,27,402.5,73Q453,119,430,184.5Q407,250,410,302.5Z;
+                M459,305Q422,360,383.5,409Q345,458,286,434.5Q227,411,163,417.5Q99,424,59.5,371Q20,318,61,262.5Q102,207,122,166.5Q142,126,181.5,87.5Q221,49,267,80.5Q313,112,366,127Q419,142,457.5,196Q496,250,459,305Z;
+                M442.5,311Q440,372,382.5,393.5Q325,415,277,407Q229,399,164.5,411Q100,423,56,371.5Q12,320,28,254.5Q44,189,94.5,159Q145,129,180,66.5Q215,4,274,36.5Q333,69,379.5,103Q426,137,435.5,193.5Q445,250,442.5,311Z;
+                M432,295.5Q391,341,364,390.5Q337,440,282,425Q227,410,178.5,399Q130,388,78.5,351.5Q27,315,24,249Q21,183,67.5,138.5Q114,94,164.5,51Q215,8,269.5,48.5Q324,89,374.5,113.5Q425,138,449,194Q473,250,432,295.5Z;
+                M433,301Q409,352,371,391.5Q333,431,276.5,444Q220,457,163,436.5Q106,416,60,367.5Q14,319,29,254Q44,189,82.5,145Q121,101,172,82.5Q223,64,272.5,78.5Q322,93,371,117Q420,141,438.5,195.5Q457,250,433,301Z;
+                M394.5,290.5Q377,331,356,384Q335,437,281,423.5Q227,410,181,396.5Q135,383,104,342.5Q73,302,57,245.5Q41,189,74,137Q107,85,166,79Q225,73,289,49Q353,25,392,79.5Q431,134,421.5,192Q412,250,394.5,290.5Z;
+                "
+              ></animate>
+            </path>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!--About section ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+    <section id="about" class="about">
+      <div class="img-about">
+        <img src="icon(2.2).png" alt="">
+      </div>
+      
+      <div class="about-content">
+        <h2>About me</h2>
+        <p> Equipped with a <b>Bachelor's degree</b> in <b>Electronics and Communication Engineering</b>, I am passionate about merging my technical expertise with web development skills. Proficient in <b>HTML, Cascading Style Sheets (CSS), and Bootstrap</b>, I have a solid foundation in front-end development. Additionally, my knowledge of <b> SQL </b>  and <b>Flask</b> enables me to build dynamic and data-driven web applications. I am excited to embark on a career where I can leverage my skills to contribute to innovative projects and continue learning in the ever-evolving field of technology. Let's connect and explore opportunities to collaborate! </p>
+      </div>
+    </section>
+    <!--skills------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+    <section id="skills" class="skills">
+      <div class="main-text">
+        <span>Technical Skills</span>       
+      </div>
+      <div class="skill-main">
+      <div class="skill-left">
+              <div class="skill-bar">
+                <div class="info">
+                  <b>HTML/CSS</b>           
+                </div>
+                <div class="bar">
+                  <span class="html"></span>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="info">
+                  <b>JavaScript</b>           
+                </div>
+                <div class="bar">
+                  <span class="javascript"></span>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="info">
+                  <b>C/C++</b>           
+                </div>
+                <div class="bar">
+                <span class="c"></span>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="info">
+                  <b>PYTHON</b>            
+                </div>
+                <div class="bar">
+                  <span class="python"></span>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="info">
+                  <b>FLASK</b>          
+                </div>
+                <div class="bar">
+                  <span class="flask"></span>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="info">
+                  <b>MYSQL</b>          
+                </div>
+                <div class="bar">
+                  <span class="mysql"></span>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="info">
+                  <b>Graphics Design</b>            
+                </div>
+                <div class="bar">
+                  <span class="graphics"></span>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="info">
+                  <b>MS OFFICE</b>          
+                </div>
+                <div class="bar">
+                  <span class="msoffice"></span>
+                </div>
+              </div>
+      </div>
+      <div class="img-right">
+        <img src="skill.png" alt="">
+      </div>
+      </div>
+    </section>
+    <!---project--------------------------------------------------------------------------->
+    <section  id="projects"class="projects">
+      <div class="main-text">
+        <span>Projects</span>
+      </div>
+      <div class="portfolio-gallery">
+        <div class="port-box">
+          <div class="port-image">
+            <img src="proj.png" alt="">
+          </div>
+          <div class="port-content">
+            <h3>web development</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Quasi perferendis sequi dolor deleniti possimus esse tempore recusandae in deserunt? 
+              Quibusdam perferendis incidunt beatae repellendus ea, 
+              minima provident iure perspiciatis deleniti.
+            </p>
+            <a href="https://github.com/subhoshreep/task-management-webpage"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+        <div class="port-box">
+          <div class="port-image">
+            <img src="proj (2).png" alt="">
+          </div>
+          <div class="port-content">
+            <h3>Python-tkinter-demonstration</h3>
+            <p>
+              It's an all in one student guide tool to manage daily activities, and work more efficiently.
+              This project is develped and tested under Python 3.9.1.
+              This is a skeletal overview of the desktop application made using tkinter.
+            </p>
+            <a href="https://github.com/subhoshreep/Tkinter_demostrate/blob/main/Features.py" ><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+        <div class="port-box">
+          <div class="port-image">
+            <img src="proj (1).png" alt="">
+          </div>
+          <div class="port-content">
+            <h3>Python</h3>
+            <p>
+                This project aims to detect the license plate
+                from low-resolution car images and extract the text from the detected
+                frames using the Optical Character Recognition technique.
+                Framework used-Pandas, Numpy, yoloV5 with pytorch, openCV, Real
+                ESRGAN, pytesseract.
+            </p>
+            <a href="https://drive.google.com/file/d/1HH1tcRjUMsIHUgWFsXzeZtYVwNVD2JUW/view?usp=sharing" ><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+        <div class="port-box">
+          <div class="port-image">
+            <img src="proj (3).png" alt="">
+          </div>
+          <div class="port-content">
+            <h3>Graphics Design</h3>
+            <p>
+              I have worked with tools like Figma, Canva, Adobe Illustrator, 
+              and Photoshop. My expertise spans UI/UX designs, captivating digital art, 
+              and eye-catching posters/banners.
+            </p>
+            <a href="https://drive.google.com/drive/folders/1JiD7m5wow1I-An3iyLzxx6LCdrgp7VSJ?usp=sharing" ><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+        <div class="port-box">
+          <div class="port-image">
+            <img src="proj (4).png" alt="">
+          </div>
+          <div class="port-content">
+            <h3>Electronics</h3>
+            <p>
+              Mastering PCB design, I've done training in mobile communication projects.
+               I deliver comprehensive training and detailed reports,
+               blending technical prowess with effective communication for impactful electronics projects.
+            </p>
+            <a href="https://drive.google.com/drive/folders/1hQVJXH_xn-YS8S_IToZlRt47UurG7Zve?usp=sharing"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Contact section-------------------------------------------->
+    <section id="contact" class="contact">
+      <div class="main-text">
+        <span>Contact Me</span>
+      </div>
+
+      <form action="contact.php" method="post">
+        <input type="text"  name="name" placeholder="Your Name">
+        <input type="text"  name="email" placeholder="Your Email">
+        <input type="text"  name="address" placeholder="Your Address">
+        <input type="text"  name="phone" placeholder="Phone Number">
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <div class="btn-box formBtn">
+          <button type="submit" class="btn" name="send">Send</button>
+        </div>
+      </form>
+    </section>
+<!--footer section-------------------------------------------------------------------------------->
+    <footer>
+      <p>Copyright &copy; 2023 by SubhoshreePattnaik || All Rights Reserved.</p>
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </footer>
+
+<script type="text/javascript"  src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+</body>
+</html>
